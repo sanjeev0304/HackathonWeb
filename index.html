@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hackathon 2024 - Code for Impact</title>
+
+    <!-- Embedded CSS with advanced styling -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-color: #f0f4f8;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: linear-gradient(135deg, #00509e, #003d75);
+            color: #fff;
+            padding: 3rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 4rem;
+            letter-spacing: 3px;
+            animation: fadeInDown 2s ease-in-out;
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header p {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+        section {
+            padding: 3rem;
+            background-color: #fff;
+            margin: 2rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 1100px;
+            margin: 2rem auto;
+        }
+
+        section#prizes {
+            background-color: #ffe699;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #00509e;
+            margin-bottom: 1.5rem;
+        }
+
+        ul {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        ul li {
+            font-size: 1.2rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #00509e;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            margin-top: 1.5rem;
+        }
+
+        a.button:hover {
+            background-color: #003d75;
+            box-shadow: 0 8px 25px rgba(0, 80, 158, 0.5);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background-color: #003d75;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        /* Countdown Styles */
+        #countdown-section {
+            background-color: #f0f9ff;
+            border: 2px solid #003d75;
+            padding: 2rem;
+        }
+
+        #countdown {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #e63946;
+        }
+
+        /* Hover effects for organizers */
+        section#organizers ul li {
+            transition: color 0.3s ease;
+        }
+
+        section#organizers ul li:hover {
+            color: #e63946;
+        }
+
+        /* Scroll up button */
+        #scroll-up-btn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #00509e;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 2rem;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        #scroll-up-btn:hover {
+            background-color: #003d75;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+
+            section {
+                padding: 2rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Hackathon 2024</h1>
+        <p>“CODE FOR IMPACT: DESIGNING SOLUTIONS FOR REAL-WORLD PROBLEMS”</p>
+        <p><strong>18th & 19th October, 2024 | KLH University, Bowrampet, Hyderabad</strong></p>
+    </header>
+
+    <!-- Prizes Section -->
+    <section id="prizes">
+        <h2>Exciting Prizes for Winners!</h2>
+        <p>Participate and stand a chance to win amazing prizes.</p>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration">
+        <h2>Register Now!</h2>
+        <p>Registration is open from 12th to 20th September, 2024.</p>
+        <a href="https://forms.gle/3GP8Lr1G4vJ9KiJKA" target="_blank" class="button">Register Here</a>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        <ul>
+            <li><strong>Evaluation-1:</strong> 23rd September, 2024</li>
+            <li><strong>Evaluation-2:</strong> 28th September, 2024</li>
+            <li><strong>Final List of Contestants:</strong> 10th October, 2024</li>
+            <li><strong>Inauguration:</strong> 18th October, 2024</li>
+            <li><strong>Evaluation-3 & Prize Distribution:</strong> 19th October, 2024</li>
+        </ul>
+    </section>
+
+    <!-- Countdown Timer Section -->
+    <section id="countdown-section">
+        <h2>Time Left for Registration</h2>
+        <p id="countdown"></p>
+    </section>
+
+    <!-- Organizers Section -->
+    <section id="organizers">
+        <h2>Organized By</h2>
+        <ul>
+            <li>Ms. D. Ramya Krishna</li>
+            <li>Ms. K. Swapnika</li>
+            <li>Ms. K. Swanthana</li>
+            <li>Ms. Amika Achom</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Hackathon Event. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-up-btn" title="Go to top">↑</button>
+
+    <!-- Embedded JavaScript for Countdown Timer and Scroll Up -->
+    <script>
+        // Countdown Timer
+        const countDownDate = new Date("Sep 20, 2024 23:59:59").getTime();
+
+        const countdownFunction = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById("countdown").innerHTML = "Registration Closed";
+            }
+        }, 1000);
+
+        // Scroll Up Button
+        const scrollUpBtn = document.getElementById("scroll-up-btn");
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollUpBtn.style.display = "block";
+            } else {
+                scrollUpBtn.style.display = "none";
+            }
+        };
+
+        scrollUpBtn.onclick = function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        };
+    </script>
+
+</body>
+</html>
